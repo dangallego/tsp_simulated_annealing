@@ -8,7 +8,7 @@ The goal is to find the shortest possible route that visits each city exactly on
 
 ## Project Status
 
-🚧 **Work in Progress** 🚧
+**Work in Progress** 
 
 This project is currently under active development.  
 The basic structure for simulated annealing is implemented and tested on small city sets.  
