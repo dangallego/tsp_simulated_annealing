@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoint files
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.venv/
+env/
+venv/
+
+# macOS files
+.DS_Store
+
+# VSCode settings (optional)
+.vscode/
+
+# Results, images, or cache (optional, if generated during runs)
+*.png
+*.pdf
+*.svg
+results/
