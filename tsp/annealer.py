@@ -9,7 +9,7 @@ class SimulatedAnnealingTSP:
 
         Parameters:
             cities (list[str]): List of city names.
-            distances (list[list[float]]): Matrix of distances between cities.
+            distances (list of list[float]): Matrix of distances between cities.
             energy_method (str): Energy method ('log', 'square', 'sqrt', 'linear').
             T (float): Initial temperature.
             T_min (float): Minimum temperature.
