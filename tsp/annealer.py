@@ -59,6 +59,10 @@ class SimulatedAnnealingTSP:
         else:
             raise ValueError(f"Unsupported energy method: {self.energy_method}")
 
+    def acceptance_probability(self, delta_E, T):
+        """Calculates acceptance probability for a worse move."""
+        return math.exp(-delta_E / T)
+
     def run(self):
         """Runs the simulated annealing optimization."""
         current_route = self.city_indices.copy()
@@ -94,7 +98,7 @@ class SimulatedAnnealingTSP:
                 current_route = candidate_route
                 current_distance = candidate_distance
             else:
-                acceptance_probability = math.exp(-delta_E / T)
+                acceptance_probability = self.acceptance_probability(delta_E, T)
                 acceptance_pressures.append(acceptance_probability)
                 pressure_temperatures.append(T)
 
